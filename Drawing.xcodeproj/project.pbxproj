@@ -14,6 +14,8 @@
 		5E5497962AE819A600046108 /* DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497952AE819A600046108 /* DrawingTests.swift */; };
 		5E5497A02AE819A600046108 /* DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54979F2AE819A600046108 /* DrawingUITests.swift */; };
 		5E5497A22AE819A600046108 /* DrawingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497A12AE819A600046108 /* DrawingUITestsLaunchTests.swift */; };
+		5E5497AF2AE81BA400046108 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E5497AE2AE81BA400046108 /* GoogleService-Info.plist */; };
+		5E5497B22AE81C8300046108 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5E5497B12AE81C8300046108 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		5E54979B2AE819A600046108 /* DrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E54979F2AE819A600046108 /* DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITests.swift; sourceTree = "<group>"; };
 		5E5497A12AE819A600046108 /* DrawingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E5497AE2AE81BA400046108 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5497B22AE81C8300046108 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,7 @@
 				5E5497842AE819A500046108 /* DrawingApp.swift */,
 				5E5497862AE819A500046108 /* ContentView.swift */,
 				5E5497882AE819A600046108 /* Assets.xcassets */,
+				5E5497AE2AE81BA400046108 /* GoogleService-Info.plist */,
 				5E54978A2AE819A600046108 /* Preview Content */,
 			);
 			path = Drawing;
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = Drawing;
+			packageProductDependencies = (
+				5E5497B12AE81C8300046108 /* FirebaseAnalytics */,
+			);
 			productName = Drawing;
 			productReference = 5E5497812AE819A500046108 /* Drawing.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 5E5497782AE819A500046108;
+			packageReferences = (
+				5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5E5497822AE819A500046108 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +244,7 @@
 			files = (
 				5E54978C2AE819A600046108 /* Preview Assets.xcassets in Resources */,
 				5E5497892AE819A600046108 /* Assets.xcassets in Resources */,
+				5E5497AF2AE81BA400046108 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E5497B12AE81C8300046108 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E5497792AE819A500046108 /* Project object */;
 }
