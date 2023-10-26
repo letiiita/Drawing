@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E00761B2AEAB9B500C46EB4 /* Startdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00761A2AEAB9B500C46EB4 /* Startdraw.swift */; };
+		5E00761D2AEABD3700C46EB4 /* drawing2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00761C2AEABD3700C46EB4 /* drawing2.swift */; };
 		5E5497852AE819A500046108 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497842AE819A500046108 /* DrawingApp.swift */; };
 		5E5497872AE819A500046108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497862AE819A500046108 /* ContentView.swift */; };
 		5E5497892AE819A600046108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5497882AE819A600046108 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E00761A2AEAB9B500C46EB4 /* Startdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startdraw.swift; sourceTree = "<group>"; };
+		5E00761C2AEABD3700C46EB4 /* drawing2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawing2.swift; sourceTree = "<group>"; };
 		5E5497812AE819A500046108 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5497842AE819A500046108 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		5E5497862AE819A500046108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			children = (
 				5E5497842AE819A500046108 /* DrawingApp.swift */,
 				5E5497862AE819A500046108 /* ContentView.swift */,
+				5E00761A2AEAB9B500C46EB4 /* Startdraw.swift */,
+				5E00761C2AEABD3700C46EB4 /* drawing2.swift */,
 				5E5497882AE819A600046108 /* Assets.xcassets */,
 				5E5497AE2AE81BA400046108 /* GoogleService-Info.plist */,
 				5E54978A2AE819A600046108 /* Preview Content */,
@@ -270,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5497872AE819A500046108 /* ContentView.swift in Sources */,
+				5E00761B2AEAB9B500C46EB4 /* Startdraw.swift in Sources */,
 				5E5497852AE819A500046108 /* DrawingApp.swift in Sources */,
+				5E00761D2AEABD3700C46EB4 /* drawing2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

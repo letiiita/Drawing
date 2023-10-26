@@ -1,27 +1,27 @@
 //
-//  ContentView.swift
+//  drawing2.swift
 //  Drawing
 //
-//  Created by Leticia Rios on 10/24/23.
+//  Created by Leticia Rios on 10/26/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct drawing2: View {
     var body: some View {
 
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, world #2!")
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct drawing2_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        drawing2()
     }
 }

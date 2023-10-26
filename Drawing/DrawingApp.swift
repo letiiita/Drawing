@@ -15,7 +15,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     return true
   }
+    
 }
+
 
 @main
 struct DrawingApp: App {
@@ -23,7 +25,7 @@ struct DrawingApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Startdraw()
         }
     }
 }
