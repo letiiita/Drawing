@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct drawing2: View {
+    @State private var tips: String = ""
     var body: some View {
-
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world #2!")
+        HStack{
+            if !tips.isEmpty {
+                Text("htdfkj")
+                TextField("Insert help here", text: $tips)
+                
+            }
+            List{
+                Text("Step 1")
+                Text("Step 2")
+                Text("Step 3")
+            }
         }
         .padding()
     }
