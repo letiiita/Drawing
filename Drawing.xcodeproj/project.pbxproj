@@ -9,8 +9,13 @@
 /* Begin PBXBuildFile section */
 		5E00761B2AEAB9B500C46EB4 /* Startdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00761A2AEAB9B500C46EB4 /* Startdraw.swift */; };
 		5E00761D2AEABD3700C46EB4 /* drawing2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00761C2AEABD3700C46EB4 /* drawing2.swift */; };
+		5E3559E12AFAA0B3000D3252 /* file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3559E02AFAA0B3000D3252 /* file.swift */; };
+		5E3559E42AFAA310000D3252 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E3559E32AFAA310000D3252 /* FirebaseAnalyticsSwift */; };
+		5E3559E62AFAA648000D3252 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5E3559E52AFAA648000D3252 /* FirebaseDatabase */; };
+		5E3559E82AFAA648000D3252 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E3559E72AFAA648000D3252 /* FirebaseDatabaseSwift */; };
+		5E3559EA2AFAA867000D3252 /* WriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3559E92AFAA867000D3252 /* WriteViewModel.swift */; };
 		5E5497852AE819A500046108 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497842AE819A500046108 /* DrawingApp.swift */; };
-		5E5497872AE819A500046108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497862AE819A500046108 /* ContentView.swift */; };
+		5E5497872AE819A500046108 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497862AE819A500046108 /* WriteView.swift */; };
 		5E5497892AE819A600046108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5497882AE819A600046108 /* Assets.xcassets */; };
 		5E54978C2AE819A600046108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E54978B2AE819A600046108 /* Preview Assets.xcassets */; };
 		5E5497962AE819A600046108 /* DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5497952AE819A600046108 /* DrawingTests.swift */; };
@@ -40,9 +45,11 @@
 /* Begin PBXFileReference section */
 		5E00761A2AEAB9B500C46EB4 /* Startdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startdraw.swift; sourceTree = "<group>"; };
 		5E00761C2AEABD3700C46EB4 /* drawing2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawing2.swift; sourceTree = "<group>"; };
+		5E3559E02AFAA0B3000D3252 /* file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = file.swift; sourceTree = "<group>"; };
+		5E3559E92AFAA867000D3252 /* WriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewModel.swift; sourceTree = "<group>"; };
 		5E5497812AE819A500046108 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5497842AE819A500046108 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
-		5E5497862AE819A500046108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E5497862AE819A500046108 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		5E5497882AE819A600046108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E54978B2AE819A600046108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E5497912AE819A600046108 /* DrawingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3559E82AFAA648000D3252 /* FirebaseDatabaseSwift in Frameworks */,
+				5E3559E62AFAA648000D3252 /* FirebaseDatabase in Frameworks */,
+				5E3559E42AFAA310000D3252 /* FirebaseAnalyticsSwift in Frameworks */,
 				5E5497B22AE81C8300046108 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +89,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E3559E22AFAA310000D3252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E5497782AE819A500046108 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +103,7 @@
 				5E5497942AE819A600046108 /* DrawingTests */,
 				5E54979E2AE819A600046108 /* DrawingUITests */,
 				5E5497822AE819A500046108 /* Products */,
+				5E3559E22AFAA310000D3252 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				5E5497842AE819A500046108 /* DrawingApp.swift */,
-				5E5497862AE819A500046108 /* ContentView.swift */,
+				5E5497862AE819A500046108 /* WriteView.swift */,
+				5E3559E92AFAA867000D3252 /* WriteViewModel.swift */,
 				5E00761A2AEAB9B500C46EB4 /* Startdraw.swift */,
 				5E00761C2AEABD3700C46EB4 /* drawing2.swift */,
+				5E3559E02AFAA0B3000D3252 /* file.swift */,
 				5E5497882AE819A600046108 /* Assets.xcassets */,
 				5E5497AE2AE81BA400046108 /* GoogleService-Info.plist */,
 				5E54978A2AE819A600046108 /* Preview Content */,
@@ -156,6 +176,9 @@
 			name = Drawing;
 			packageProductDependencies = (
 				5E5497B12AE81C8300046108 /* FirebaseAnalytics */,
+				5E3559E32AFAA310000D3252 /* FirebaseAnalyticsSwift */,
+				5E3559E52AFAA648000D3252 /* FirebaseDatabase */,
+				5E3559E72AFAA648000D3252 /* FirebaseDatabaseSwift */,
 			);
 			productName = Drawing;
 			productReference = 5E5497812AE819A500046108 /* Drawing.app */;
@@ -275,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5497872AE819A500046108 /* ContentView.swift in Sources */,
+				5E3559EA2AFAA867000D3252 /* WriteViewModel.swift in Sources */,
+				5E5497872AE819A500046108 /* WriteView.swift in Sources */,
 				5E00761B2AEAB9B500C46EB4 /* Startdraw.swift in Sources */,
+				5E3559E12AFAA0B3000D3252 /* file.swift in Sources */,
 				5E5497852AE819A500046108 /* DrawingApp.swift in Sources */,
 				5E00761D2AEABD3700C46EB4 /* drawing2.swift in Sources */,
 			);
@@ -610,6 +635,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5E3559E32AFAA310000D3252 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		5E3559E52AFAA648000D3252 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5E3559E72AFAA648000D3252 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
 		5E5497B12AE81C8300046108 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5E5497B02AE81C8300046108 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

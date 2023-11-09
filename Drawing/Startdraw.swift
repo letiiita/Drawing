@@ -9,7 +9,7 @@ import SwiftUI
 struct Startdraw: View {
     var body: some View {
         TabView {
-            ContentView()
+            WriteView()
                 .tabItem {
                     Label("Drawing 1", systemImage: "square.and.pencil")
                 }
